@@ -244,6 +244,7 @@ init_rapl()
     case 0x40650: /* Haswell:            0x4065X (Tables 35:11,12,14,17,18,19) */
     case 0x306c0: /* Haswell:            0x306cX (Tables 35:11,12,14,17,19) */
     case 0x306f2: /* Haswell, CPU in ELF:            Yubo Jun 22 2016 */
+    case 0x406f1: /* Boardwell, CPU in ELF3:            Yubo Jun 28 2016 */
     case 0x306a0: /* IvyBridge client:   0x306aX (Tables 35:11,12,14) */
     case 0x206a0: /* SandyBridge client: 0x206aX (Tables 35:11,12) */
         msr_support_table[MSR_RAPL_POWER_UNIT & MSR_SUPPORT_MASK]          = 1;
